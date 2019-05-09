@@ -7,21 +7,24 @@ From the Sugarcrm folder launch:
   
 ```
 Usage:
-  osy: repair [options]
- 
+  osy:repair [options]
+
 Options:
-  -e, --execute_query if set, executes the queries to database
-  -d, --dont_execute_query if set, does not execute the queries to database
-  -r --dont_execute_relationships if set, does not execute Rebuild Relationships
-  -l --dont_execute_roles if set, does not execute Repair Roles
-  -h, --help Display this help message
-  -q, --quiet Do not output any message
-  -V, --version Display this application version
-      --ansi Force ANSI output
-      --no-ansi Disable ANSI output
-  -n, --no-interaction Do not ask any interactive question
-      --profile Display timing and memory usage information
-  -v | vv | vvv, --verbose Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+  -e, --execute_query               if set, executes the queries to database
+  -d, --dont_execute_query          if set, does not execute the queries to database
+  -r, --dont_execute_relationships  if set, does not execute Rebuild Relationships
+  -l, --dont_execute_roles          if set, does not execute Repair Roles
+  -h, --help                        Display this help message
+  -q, --quiet                       Do not output any message
+  -V, --version                     Display this application version
+      --ansi                        Force ANSI output
+      --no-ansi                     Disable ANSI output
+  -n, --no-interaction              Do not ask any interactive question
+      --profile                     Display timing and memory usage information
+  -v|vv|vvv, --verbose              Increase verbosity of messages: 1 for normal output, 2 for more verbose and 3 for debug
+
+Help:
+  Run Quick Repair and Rebuild
 ```
 
 ### Examples
