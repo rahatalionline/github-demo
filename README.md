@@ -1,5 +1,5 @@
-# Repair Utilities
-Allows you to perform sugar repair, including repair roles and reports, directly from the CLI console (shell). This utility aslso include osy_repair.php but launches it ONLY in case where the sugarcrm CLI commands are not available.
+## Repair Utilities
+Allows you to perform sugar repair, including repair roles and reports, directly from the CLI console (shell). This utility also include osy_repair.php but launches it ONLY in case where the sugarcrm CLI commands are not available.
 
 ### How to use?
 From the Sugarcrm folder launch:
@@ -30,11 +30,16 @@ Options:
 1. performs "Rebuild Relationships"
 1. performs "Repair Roles"
 
-**./bin/sugarcrm osy:repair -e --profile**
+**./bin/sugarcrm osy:repair -e**
 1. executes "Quick Repair and Rebuild" and executes the queries directly without waiting for confirmation
 1. performs "Rebuild Relationships"
 1. performs "Repair Roles"
-1. view used memory and run time
+
+**./bin/sugarcrm osy:repair -d**
+1. executes "Quick Repair and Rebuild" and doest not executes the queries directly to database
+1. performs "Rebuild Relationships"
+1. performs "Repair Roles"
+
 
 ### Exit code
 In case of error in the execution of the queries, an exit code returns > 0
@@ -44,6 +49,6 @@ In case of error in the execution of the queries, an exit code returns > 0
 
 ### In case of problems
 Give attention to the file/folder permissions:
-1. The script is sometimes not executable do chmod + x bin/sugarm
-1. The user running the script must have access to the files (read vardef etc ..)
-1. The script modifies/regenerates cache, check that www-data can read the newly generated files
+- The script is sometimes not executable do chmod +x bin/sugarm
+- The user running the script must have access to the files (read vardef etc ..)
+- The script modifies/regenerates cache, check that www-data can read the newly generated files
